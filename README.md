@@ -150,6 +150,22 @@ int main() {
 }
 ```
 
+```
+
+import cv2
+from matplotlib import pyplot as plt
+
+output_image = cv2.imread(
+    '/content/output_sobel.jpeg',
+    cv2.IMREAD_GRAYSCALE
+)
+
+plt.imshow(output_image, cmap='gray')
+plt.title('Edge Detection Output')
+plt.axis('off')
+plt.show()
+```
+
 ## OUTPUT:
 
 <img width="993" height="833" alt="Screenshot 2026-05-23 211230" src="https://github.com/user-attachments/assets/253c0244-8b61-4dde-984b-a0f80760ec99" />
